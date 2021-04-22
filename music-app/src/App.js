@@ -1,17 +1,16 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import { LandingPage } from "./Components/mainPage";
-import NavBar  from "./Components/NavBar/navigation"
+import {mainPage} from "./Components/mainPage";
 import MusicApp from "./Components/music"
-import {ProtectedRoute} from "./Components/Protected.route"
+import Navbar  from "./Components/navigation/navbar"
 import './css/App.css';
 
 function App() {
   return (
     <div className="App">
-        <Route path='/' component={NavBar}/>
-        <Route exact path='/' component={LandingPage}/>
-        <ProtectedRoute exact path="/app" component={MusicApp}/>
+        <Route path='/' component={Navbar}/>
+        <Route exact path='/' component={mainPage}/>
+        <safePathway exact path="/app" component={MusicApp}/>
     </div>
   );
 }
