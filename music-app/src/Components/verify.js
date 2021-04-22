@@ -1,7 +1,7 @@
 import React from 'react'
 import {Redirect, Route} from 'react-router-dom'
 
-class authenticated {
+class authentication {
     constructor(){
         this.authenticated = false
     }
@@ -26,7 +26,7 @@ export const safePathway = ({component: Component, ...rest}) => {
     return(
         <Route {...rest} render={
             (props) => {
-                if(authenticated.verified()){
+                if(authentication.verified()){
                   return <Component {...props}/>
                 }
                else {
@@ -44,3 +44,5 @@ export const safePathway = ({component: Component, ...rest}) => {
     )
 
 }
+
+export default new authenticated
