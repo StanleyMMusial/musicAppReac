@@ -45,4 +45,4 @@ export const safePathway = ({component: Component, ...rest}) => {
 
 }
 
-export default new authenticated
+export default new authentication()

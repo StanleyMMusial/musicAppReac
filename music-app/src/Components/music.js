@@ -1,6 +1,7 @@
+import React from 'react';
 import { useEffect, useState } from 'react'
 import { Card, CardContent, CardActions, Select, Typography, Slider, MenuItem } from '@material-ui/core'
-import "../css/App.css"
+import '../Css/App.css';
 
 
 const MusicApp = (props) => {

@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom'
 import {mainPage} from "./Components/mainPage";
 import MusicApp from "./Components/music"
 import Navbar  from "./Components/navigation/navbar"
-import './css/App.css';
+import './Css/App.css';
 
 function App() {
   return (
